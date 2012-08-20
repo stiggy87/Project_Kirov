@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -102,10 +102,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="55" y2="0" width="0" layer="20"/>
+<wire x1="55" y1="0" x2="55" y2="50" width="0" layer="20"/>
+<wire x1="55" y1="50" x2="0" y2="50" width="0" layer="20"/>
+<wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -216,6 +216,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="GND" x="0" y="0" dx="7.62" dy="7.62" layer="1"/>
 <text x="-3.81" y="-3.81" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-5.08" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="CAP-PTH-5MM">
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="-2.5" y="0" drill="0.7" diameter="1.651"/>
+<pad name="2" x="2.5" y="0" drill="0.7" diameter="1.651"/>
+<text x="-0.762" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.016" y="-1.524" size="0.4064" layer="27">&gt;Value</text>
 </package>
 </packages>
 </library>
@@ -405,38 +421,64 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="SparkFun-Connectors" package="EB-85A" value="EB-85ASMD" x="-39.37" y="26.67"/>
-<element name="GPS2ZYNQ" library="SparkFun-Connectors" package="RJ45-8" value="RJ45-8PTH" x="-21.59" y="11.43"/>
-<element name="LED1" library="SparkFun-LED" package="LED5MM" value="" x="-21.59" y="39.37"/>
-<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM_PTH" value="" x="-21.59" y="29.21"/>
-<element name="TX1JP" library="SparkFun-Connectors" package="1X03_LONGPADS" value="" x="-20.32" y="45.72"/>
-<element name="RX1JP" library="SparkFun-Connectors" package="1X03_LONGPADS" value="" x="-31.75" y="38.1"/>
-<element name="RX2JP" library="SparkFun-Connectors" package="1X03_LONGPADS" value="" x="-40.64" y="38.1"/>
+<element name="U$1" library="SparkFun-Connectors" package="EB-85A" value="EB-85ASMD" x="12.96" y="6.53"/>
+<element name="GPS2ZYNQ" library="SparkFun-Connectors" package="RJ45-8" value="RJ45-8PTH" x="2.29" y="26.26" rot="R270"/>
+<element name="LED1" library="SparkFun-LED" package="LED5MM" value="" x="44.74" y="20.23"/>
+<element name="BAT1" library="SparkFun-Electromechanical" package="BATTCON_12MM_PTH" value="" x="45.43" y="8.12"/>
+<element name="TX1JP" library="SparkFun-Connectors" package="1X03_LONGPADS" value="" x="26.99" y="46.42" rot="R180"/>
+<element name="RX1JP" library="SparkFun-Connectors" package="1X03_LONGPADS" value="" x="48.04" y="41.58" rot="R90"/>
+<element name="RX2JP" library="SparkFun-Connectors" package="1X03_LONGPADS" value="" x="48.04" y="30.69" rot="R90"/>
+<element name="C1" library="SparkFun-Passives" package="CAP-PTH-5MM" value="100 uf" x="7.94" y="38.02"/>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="U$1" pad="1"/>
 <contactref element="GPS2ZYNQ" pad="1"/>
-<wire x1="-26.035" y1="17.78" x2="-39.37" y2="26.67" width="0" layer="19" extent="1-1"/>
+<contactref element="C1" pad="1"/>
+<wire x1="5.08" y1="13.97" x2="12.7" y2="6.35" width="0.254" layer="1"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="30.48" width="0.254" layer="1"/>
+<wire x1="5.08" y1="30.48" x2="5.08" y2="13.97" width="0.254" layer="1"/>
+<wire x1="12.7" y1="6.35" x2="12.96" y2="6.53" width="0.254" layer="1"/>
+<wire x1="5.08" y1="38.1" x2="5.44" y2="38.02" width="0.254" layer="1"/>
+<wire x1="5.08" y1="30.48" x2="8.89" y2="30.48" width="0.254" layer="1"/>
+<wire x1="8.89" y1="30.48" x2="8.64" y2="30.705" width="0.254" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U$1" pad="2"/>
 <contactref element="BAT1" pad="GND"/>
 <contactref element="LED1" pad="K"/>
 <contactref element="GPS2ZYNQ" pad="2"/>
-<wire x1="-21.59" y1="29.21" x2="-20.32" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="-24.765" y1="20.32" x2="-21.59" y2="29.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.37" y1="26.67" x2="-24.765" y2="20.32" width="0" layer="19" extent="1-1"/>
+<contactref element="C1" pad="2"/>
+<wire x1="45.72" y1="8.89" x2="45.72" y2="20.32" width="0.254" layer="1"/>
+<wire x1="45.72" y1="20.32" x2="46.01" y2="20.23" width="0.254" layer="1"/>
+<wire x1="45.72" y1="8.89" x2="45.43" y2="8.12" width="0.254" layer="1"/>
+<wire x1="13.97" y1="26.67" x2="13.97" y2="6.35" width="0.254" layer="1"/>
+<wire x1="11.43" y1="29.21" x2="13.97" y2="26.67" width="0.254" layer="1"/>
+<wire x1="11.43" y1="36.83" x2="10.16" y2="38.1" width="0.254" layer="1"/>
+<wire x1="11.43" y1="29.21" x2="11.43" y2="36.83" width="0.254" layer="1"/>
+<wire x1="10.16" y1="38.1" x2="10.44" y2="38.02" width="0.254" layer="1"/>
+<wire x1="11.43" y1="29.21" x2="11.18" y2="29.435" width="0.254" layer="1"/>
+<wire x1="38.1" y1="1.27" x2="44.45" y2="7.62" width="0.254" layer="1"/>
+<wire x1="13.97" y1="1.27" x2="38.1" y2="1.27" width="0.254" layer="1"/>
+<wire x1="13.97" y1="6.35" x2="13.97" y2="1.27" width="0.254" layer="1"/>
+<wire x1="44.45" y1="7.62" x2="45.43" y2="8.12" width="0.254" layer="1"/>
+<wire x1="13.97" y1="6.35" x2="13.96" y2="6.53" width="0.254" layer="1"/>
 </signal>
 <signal name="TX1">
 <contactref element="U$1" pad="3"/>
 <contactref element="TX1JP" pad="1"/>
-<wire x1="-37.37" y1="26.67" x2="-20.32" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="34.29" x2="15.24" y2="6.35" width="0.254" layer="1"/>
+<wire x1="26.67" y1="45.72" x2="15.24" y2="34.29" width="0.254" layer="1"/>
+<wire x1="15.24" y1="6.35" x2="14.96" y2="6.53" width="0.254" layer="1"/>
+<wire x1="26.67" y1="45.72" x2="26.99" y2="46.42" width="0.254" layer="1"/>
 </signal>
 <signal name="RX1">
 <contactref element="U$1" pad="4"/>
 <contactref element="RX1JP" pad="1"/>
-<wire x1="-31.75" y1="38.1" x2="-36.37" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="48.04" y1="41.58" x2="41.58" y2="41.58" width="0.4064" layer="1"/>
+<wire x1="41.58" y1="41.58" x2="16" y2="16" width="0.4064" layer="1"/>
+<wire x1="16" y1="16" x2="16" y2="6.57" width="0.4064" layer="1"/>
+<wire x1="16" y1="6.57" x2="15.96" y2="6.53" width="0.4064" layer="1"/>
 </signal>
 <signal name="TX2">
 <contactref element="U$1" pad="5"/>
@@ -444,32 +486,52 @@ design rules under a new name.</description>
 <signal name="RX2">
 <contactref element="U$1" pad="6"/>
 <contactref element="RX2JP" pad="1"/>
-<wire x1="-40.64" y1="38.1" x2="-34.37" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="6.35" width="0.254" layer="1"/>
+<wire x1="40.64" y1="30.48" x2="17.78" y2="7.62" width="0.254" layer="1"/>
+<wire x1="46.99" y1="30.48" x2="40.64" y2="30.48" width="0.254" layer="1"/>
+<wire x1="17.78" y1="6.35" x2="17.96" y2="6.53" width="0.254" layer="1"/>
+<wire x1="46.99" y1="30.48" x2="48.04" y2="30.69" width="0.254" layer="1"/>
 </signal>
 <signal name="BATT">
 <contactref element="U$1" pad="8"/>
 <contactref element="BAT1" pad="VCC@1"/>
-<wire x1="-28.194" y1="29.21" x2="-32.37" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="38.826" y1="8.12" x2="21.55" y2="8.12" width="0.4064" layer="1"/>
+<wire x1="21.55" y1="8.12" x2="19.96" y2="6.53" width="0.4064" layer="1"/>
 </signal>
 <signal name="PPS">
 <contactref element="U$1" pad="7"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="-33.37" y1="26.67" x2="-22.86" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="7.62" x2="19.05" y2="6.35" width="0.254" layer="1"/>
+<wire x1="31.75" y1="20.32" x2="19.05" y2="7.62" width="0.254" layer="1"/>
+<wire x1="43.18" y1="20.32" x2="31.75" y2="20.32" width="0.254" layer="1"/>
+<wire x1="19.05" y1="6.35" x2="18.96" y2="6.53" width="0.254" layer="1"/>
+<wire x1="43.18" y1="20.32" x2="43.47" y2="20.23" width="0.254" layer="1"/>
 </signal>
 <signal name="ZTX1">
 <contactref element="GPS2ZYNQ" pad="3"/>
 <contactref element="TX1JP" pad="2"/>
-<wire x1="-23.495" y1="17.78" x2="-17.78" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="30.48" x2="8.89" y2="27.94" width="0.254" layer="16"/>
+<wire x1="6.35" y1="36.83" x2="6.35" y2="30.48" width="0.254" layer="16"/>
+<wire x1="15.24" y1="36.83" x2="6.35" y2="36.83" width="0.254" layer="16"/>
+<wire x1="24.13" y1="45.72" x2="15.24" y2="36.83" width="0.254" layer="16"/>
+<wire x1="8.89" y1="27.94" x2="8.64" y2="28.165" width="0.254" layer="16"/>
+<wire x1="24.13" y1="45.72" x2="24.45" y2="46.42" width="0.254" layer="16"/>
 </signal>
 <signal name="ZRX1">
 <contactref element="GPS2ZYNQ" pad="4"/>
 <contactref element="RX1JP" pad="2"/>
-<wire x1="-22.225" y1="20.32" x2="-29.21" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="44.45" x2="11.43" y2="26.67" width="0.254" layer="16"/>
+<wire x1="46.99" y1="44.45" x2="29.21" y2="44.45" width="0.254" layer="16"/>
+<wire x1="11.43" y1="26.67" x2="11.18" y2="26.895" width="0.254" layer="16"/>
+<wire x1="46.99" y1="44.45" x2="48.04" y2="44.12" width="0.254" layer="16"/>
 </signal>
 <signal name="ZRX2">
 <contactref element="GPS2ZYNQ" pad="6"/>
 <contactref element="RX2JP" pad="2"/>
-<wire x1="-38.1" y1="38.1" x2="-19.685" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="33.02" x2="11.43" y2="24.13" width="0.254" layer="16"/>
+<wire x1="46.99" y1="33.02" x2="20.32" y2="33.02" width="0.254" layer="16"/>
+<wire x1="11.43" y1="24.13" x2="11.18" y2="24.355" width="0.254" layer="16"/>
+<wire x1="46.99" y1="33.02" x2="48.04" y2="33.23" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
