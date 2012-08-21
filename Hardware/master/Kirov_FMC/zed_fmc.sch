@@ -970,238 +970,279 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="88.9" y="5.08"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="C2-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C2"/>
 <wire x1="-5.08" y1="99.06" x2="-17.78" y2="99.06" width="0.1524" layer="91"/>
+<label x="-17.78" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="C3-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C3"/>
 <wire x1="-5.08" y1="96.52" x2="-17.78" y2="96.52" width="0.1524" layer="91"/>
+<label x="-17.78" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="C6-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C6"/>
 <wire x1="-5.08" y1="88.9" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
+<label x="-17.78" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="C7-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C7"/>
 <wire x1="-5.08" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
+<label x="-17.78" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="LA06_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C10"/>
 <wire x1="-5.08" y1="78.74" x2="-17.78" y2="78.74" width="0.1524" layer="91"/>
+<label x="-17.78" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="LA06_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C11"/>
 <wire x1="-5.08" y1="76.2" x2="-17.78" y2="76.2" width="0.1524" layer="91"/>
+<label x="-17.78" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="LA10_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C14"/>
 <wire x1="-5.08" y1="68.58" x2="-17.78" y2="68.58" width="0.1524" layer="91"/>
+<label x="-17.78" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="LA10_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C15"/>
 <wire x1="-5.08" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
+<label x="-17.78" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="LA14_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C18"/>
 <wire x1="-5.08" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+<label x="-17.78" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="LA14_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C19"/>
 <wire x1="-5.08" y1="55.88" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
+<label x="-17.78" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="LA18_CC_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C22"/>
 <wire x1="-5.08" y1="48.26" x2="-17.78" y2="48.26" width="0.1524" layer="91"/>
+<label x="-17.78" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="LA18_CC_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C23"/>
 <wire x1="-5.08" y1="45.72" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
+<label x="-17.78" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="LA27_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C26"/>
 <wire x1="-5.08" y1="38.1" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<label x="-17.78" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="LA27_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C27"/>
 <wire x1="-5.08" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
+<label x="-17.78" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="SCL" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C30"/>
 <wire x1="-5.08" y1="27.94" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
+<label x="-17.78" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="SDA" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C31"/>
 <wire x1="-5.08" y1="25.4" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+<label x="-17.78" y="25.4" size="1.778" layer="95"/>
+<label x="-17.78" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="C34-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="C34"/>
 <wire x1="-5.08" y1="17.78" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+<label x="-17.78" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="PS-POR-B" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D1"/>
 <wire x1="25.4" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
+<label x="33.02" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="D4-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D4"/>
 <wire x1="25.4" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<label x="33.02" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="D5-NC" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D5"/>
 <wire x1="25.4" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<label x="33.02" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="LA01_CC_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D8"/>
 <wire x1="25.4" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="33.02" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="LA01_CC_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D9"/>
 <wire x1="25.4" y1="81.28" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
+<label x="33.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="LA05_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D11"/>
 <wire x1="25.4" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<label x="33.02" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="LA05_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D12"/>
 <wire x1="25.4" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<label x="33.02" y="73.66" size="1.778" layer="95"/>
+<label x="33.02" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="LA09_P" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D14"/>
 <wire x1="25.4" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
+<label x="33.02" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="LA09_N" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D15"/>
 <wire x1="25.4" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
+<label x="33.02" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D17"/>
 <wire x1="25.4" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<label x="33.02" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D18"/>
 <wire x1="25.4" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
+<label x="33.02" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D20"/>
 <wire x1="25.4" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
+<label x="33.02" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D21"/>
 <wire x1="25.4" y1="50.8" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
+<label x="33.02" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D23"/>
 <wire x1="25.4" y1="45.72" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
+<label x="33.02" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D24"/>
 <wire x1="25.4" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<label x="33.02" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D26"/>
 <wire x1="25.4" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<label x="33.02" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D27"/>
 <wire x1="25.4" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<label x="33.02" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D29"/>
 <wire x1="25.4" y1="30.48" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
+<label x="33.02" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D30"/>
 <wire x1="25.4" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<label x="33.02" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D31"/>
 <wire x1="25.4" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
+<label x="33.02" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D33"/>
 <wire x1="25.4" y1="20.32" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
+<label x="33.02" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
 <pinref part="ZED1" gate="-A" pin="D34"/>
 <wire x1="25.4" y1="17.78" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
+<label x="33.02" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VU12V0" class="0">
@@ -1230,6 +1271,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="ZED1" gate="-A" pin="D32"/>
 <wire x1="25.4" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+<label x="33.02" y="22.86" size="1.778" layer="95"/>
 <label x="33.02" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>

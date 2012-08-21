@@ -614,14 +614,15 @@
 </class>
 </classes>
 <parts>
-<part name="ZED_FMC" library="zed-board" deviceset="ZED-BOARD" device=""/>
+<part name="ZED1" library="zed-board" deviceset="ZED-BOARD" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="ZED_FMC" gate="-A" x="86.36" y="60.96"/>
+<instance part="ZED1" gate="-A" x="15.24" y="66.04"/>
+<instance part="ZED1" gate="-B" x="58.42" y="66.04"/>
 </instances>
 <busses>
 </busses>
